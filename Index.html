@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Pick</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<style>
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+}
+header {
+  background-color: rgb(255, 60, 0);
+  padding: 15px;
+  color: rgb(0, 0, 0);
+}
+h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 2rem;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; 
+  background-color: orangered;
+  padding: 10px 0;
+}
+nav a {
+  flex: 1 1 150px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+nav a:hover {
+  background-color: rgb(255, 90, 30);
+}
+.Nfl-img {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 50px;
+  height: auto;
+  max-width: 15%;
+  flex-wrap: wrap;
+}
+p.Intro-pick {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.the-pick {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.draft-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+.end-pick {
+  color: rgb(255, 55, 55);
+  text-align: center;
+  margin-top: 12px;
+  position: static;   
+  clear: both;
+  width: 100%; 
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    flex-direction: column; 
+  }
+
+  nav a {
+    flex: 1 1 100%;
+    padding: 10px 0;
+  }
+
+  .image-container {
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  .draft-image {
+    max-width: 100%;
+  }
+}
+@media (max-width: 460px) {
+  .Nfl-img {
+    width: 50px;
+    top: 10px;
+    left: 10px;
+    display: none;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .Nfl-img {
+    display: none;
+}
+}
+@media (max-width: 950px) {
+  .Nfl-img {
+    display: none;
+}
+}
+</style>
+  <body>
+    <header>
+      <h1>The Pick</h1>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="bakerscareer.html">Baker's Career</a>
+        <a href="stats.html">Stats</a>
+        <a href="yearswasted.html">Years Wasted</a>
+        <a href="Halloffame.html">Hall Of Fame</a>
+      </nav>
+      <div class="nfl-logo">
+        <img src="Nfllogo.jpg" alt="NFL Logo" class="Nfl-img" />
+      </div>
+    </header>
+
+    <main>
+      <p class="Intro-pick">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur
+        adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien
+        vitae pellentesque.
+      </p>
+
+      <div class="the-pick">
+        <a
+          href="https://youtu.be/FueTQCa9fOo?si=ARe_WmdA6H4DO_2V&t=14"
+          target="_blank"
+          class="draft-link"
+        >
+          <img
+            src="https://i.insider.com/5ae26cf219ee861c008b45b1?width=900&format=jpeg&auto=webp"
+            alt="Draft Pick"
+            class="draft-image"
+          />
+        </a>
+
+        <p class="end-pick">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur
+          adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien
+          vitae pellentesque.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
