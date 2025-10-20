@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 <style>
-  body {
+body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: white;
   color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 header {
   background-color: rgb(255, 60, 0);
@@ -81,6 +85,7 @@ p.Intro-pick {
   clear: both;
   width: 100%; 
 }
+
 @media (max-width: 768px) {
   h1 {
     font-size: 1.5rem;
@@ -138,6 +143,48 @@ p.Intro-pick {
   .Nfl-img {
     display: none;
 }
+}
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #000000;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(255, 90, 30);
+  color: white;
+}
+.Browns-Stats{
+  color: rgb(49, 29, 0);
+}
+.Panthers-Stats{
+color: rgb(0, 133, 202);
+}
+.Rams-Stats{
+color: rgb(255, 163, 0);
+}
+.Buccaneers-Stats{
+color: rgb(213, 10, 10);
+}
+footer{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 60, 0);
+  padding: 10px 0;
+  text-align: center;
+  margin-top: auto;
 }
 </style>
 <!DOCTYPE html>
